@@ -1,0 +1,23 @@
+<van-notify id="van-notify" />
+<block wx:for="{{movieList}}" wx:key="index">
+  <view class="movie">
+    <view class="movie-img">
+      <image src="{{item.images.small}}"></image>
+    </view>
+    <view class="movie-info">
+      <view class="movie-title">{{item.title}}</view>
+      <view class="movie-average">
+        观众评分：<text class="movie-score">{{item.rating.average}}分</text>
+      </view>
+      <view>
+        主演：<text wx:for="{{item.casts}}" wx:key="index">{{item.name}} </text>
+      </view>
+      <view>
+        年份：{{item.year}}
+      </view>
+      <view class="comment-btn">
+        <van-button bindtap="gotoComment" data-movieid="{{item.id}}" icon="chat-o" size="small" type="primary">评价</van-button>
+      </view>
+    </view>
+  </view>
+</block>

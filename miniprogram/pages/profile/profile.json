@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-button": "vant-weapp/button",
+    "van-dialog": "vant-weapp/dialog",
+    "van-image": "vant-weapp/image",
+    "van-rate": "vant-weapp/rate"
+  },
+  "navigationBarTitleText": "我的评价",
+  "enablePullDownRefresh": false
+}

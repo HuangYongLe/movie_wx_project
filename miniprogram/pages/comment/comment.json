@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-field": "vant-weapp/field",
+    "van-rate": "vant-weapp/rate",
+    "van-button": "vant-weapp/button",
+    "van-uploader": "vant-weapp/uploader"
+  },
+  "navigationBarTitleText": "电影详情评价"
+}

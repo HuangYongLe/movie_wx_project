@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="detail-container" style="background: url({{detail.images.large}}) no-repeat top/cover"></view>
+  <view class="detail-mask"></view>
+  <view class="detail-info">
+    <image class="detail-img" src="{{detail.images.large}}"></image>
+    <view class="detail">
+      <view class="detail-nm">{{detail.title}}</view>
+      <view>{{detail.original_title}}</view>
+      <view class="detail.sc">{{detail.rating.average}}分</view>
+      <view>{{detail.countries[0]}}</view>
+      <view>导演：{{detail.directors[0].name}}</view>
+    </view>
+  </view>
+  <view class="desc">{{detail.summary}}</view>
+  <!-- 评价 -->
+  <view class="comment-container">
+    <view class="comment-title"><h2 class="van-upload-title">评价</h2></view>
+    <view class="comment-star"><van-rate value="{{ score }}" bind:change="onScoreChange" /></view>
+    <view class="comment-desc"><van-field value="{{ content }}" placeholder="快来写一些评价吧 ( •̀ ω •́ )✧" bind:change="onContentChange" /></view>
+    <view class="comment-title"><h2 class="van-upload-title">上传图片</h2></view>
+    <view class="comment-upload">
+      <van-uploader file-list="{{ images }}" multiple="true" max-count="9" bind:after-read="afterRead" bind:delete="deleteImg" />
+    </view>
+
+    <!-- <view class="page__bd">
+      <mp-cells>
+        <mp-cell>
+          <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}" upload="{{uplaodFile}}" files="{{files}}" max-count="9" title="图片上传" tips=""></mp-uploader>
+        </mp-cell>
+      </mp-cells>
+    </view> -->
+
+    <!-- <van-button type="warning" bindtap="uploadImg">上传图片</van-button> -->
+    <!-- <view>
+      <image class="comment-img" src="{{item}}" wx:for="{{images}}" wx:key="{{index}}"></image>
+    </view> -->
+    <!-- <van-button type="danger" bindtap="submit">提交评价</van-button> -->
+    <!-- <van-button color="#7232dd">上传图片</van-button> -->
+    
+    <view class="comment-submit"><van-button icon="passed" color="#f9a11b" size="large" bindtap="submit">提交评价</van-button></view>
+  </view>
+  <view></view>
+</view>

@@ -1,0 +1,94 @@
+.container {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.detail-container {
+  width: 100%;
+  height: 400rpx;
+  filter: blur(40rpx);
+  opacity: 0.4;
+}
+
+.detail-mask {
+  position: absolute;
+  width: 100%;
+  height: 400rpx;
+  background-color: #333;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.detail-img {
+  width: 280rpx;
+  height: 90%;
+  margin-right: 24rpx;
+}
+
+.detail-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx;
+}
+
+.detail {
+  flex-grow: 1;
+  line-height: 60rpx;
+}
+
+.detail view {
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.detail .detail-nm {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.detail .sc {
+  color: #ff7761;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.desc {
+  padding: 20rpx;
+  color: #555;
+  font-size: 24rpx;
+}
+
+.comment-container {
+  width: 100%;
+  padding: 0 20rpx;
+}
+
+.comment-title {
+  padding: 20rpx 0 0 0;
+  color: #cdcdcd;
+}
+.comment-star {
+  padding: 20rpx 0 10px 10rpx;
+}
+.comment-desc {
+  padding: 0 10rpx;
+}
+.comment-submit {
+  text-align: center;
+  padding: 0 10rpx;
+}
+.comment-upload {
+  padding: 20rpx 0 20rpx 10rpx;
+}
+
+.van-upload-title {
+  margin: 0;
+  padding: 32rpx 16rpx 16rpx;
+  font-weight: normal;
+  font-size: 30rpx;
+}

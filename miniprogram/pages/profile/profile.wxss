@@ -1,0 +1,97 @@
+.profile-container {
+  width: 100%;
+}
+.profile-info {
+  background: #274555;
+  height: 400rpx;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.profile-img {
+  width: 200rpx;
+  height: 200rpx;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 60rpx);
+}
+.profile-name {
+  font-size: 36rpx;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 270rpx);
+}
+.profile-btn {
+  margin: 20rpx auto;
+}
+.comment-title {
+  margin: 0;
+  padding: 32rpx 16rpx 16rpx;
+  font-weight: normal;
+  font-size: 30rpx;
+  color: #cdcdcd;
+}
+.comment-container {
+  padding: 10rpx;
+}
+.comment-item {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+}
+.comment-item .del-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.comment-item .del-btn button {
+  border: 0;
+}
+.comment-movie {
+  font-size: 30rpx;
+  color: #ccc;
+}
+.comment-star {
+  padding-top: 20rpx;
+}
+.comment-content {
+  color: #666;
+  font-size: 34rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.comment-content .comment-profile {
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.comment-content .comment-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.comment-image image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+}
+.comment-img {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx 20rpx 0 0;
+}
+.comment-null {
+  text-align: center;
+  font-size: 34rpx;
+  color: #aaa;
+}
